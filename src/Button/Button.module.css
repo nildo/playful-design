@@ -1,0 +1,12 @@
+.base {
+  padding: 13px 16px;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  background-color: #0070f3;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 150px;
+  cursor: pointer;
+  outline: none;
+}

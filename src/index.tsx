@@ -1,3 +1,7 @@
+import Button from './Button';
 import TopBar from './TopBar';
 
-export { TopBar };
+export {
+  Button,
+  TopBar,
+};
