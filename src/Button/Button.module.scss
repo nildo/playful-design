@@ -1,0 +1,21 @@
+@import '../styles/colors.scss';
+
+.base {
+  padding: 13px 16px;
+  border-radius: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid $dark-blue;
+  background-color: $blue;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 150px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+}

@@ -13,15 +13,17 @@ module.exports = {
 
     // push our custom easy one
     config.module.rules.push({
-      test: /\.css$/,
+      test: /\.s?css$/,
       use: [
-        'style-loader',
+        {
+          loader: 'style-loader',
+        },
         {
           loader: 'css-loader',
-          options: {
-            // Key config
-            modules: true,
-          },
+          options: { modules: true },
+        },
+        {
+          loader: 'sass-loader',
         },
       ],
     });
