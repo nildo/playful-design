@@ -16,6 +16,26 @@
   outline: none;
 
   &:hover {
-    background-color: $dark-blue;
+    filter: brightness(1.1);
   }
+}
+
+.black {
+  background-color: $black;
+  border-bottom-color: $dark-black;
+}
+
+.blue {
+  background-color: $blue;
+  border-bottom-color: $dark-blue;
+}
+
+.green {
+  background-color: $green;
+  border-bottom-color: $dark-green;
+}
+
+.orange {
+  background-color: $orange;
+  border-bottom-color: $dark-orange;
 }
