@@ -10,11 +10,16 @@ export default {
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => (
-  <div style={{ padding: 10 }}><Button {...args} >Default</Button></div>
+  <div style={{ padding: 10 }}><Button {...args} >Button</Button></div>
 );
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const WithIcon = Template.bind({});
+WithIcon.args = {
+  icon: 'github',
+};
 
 export const Colors = () => (
   <div style={{ display: 'flex' }}>
