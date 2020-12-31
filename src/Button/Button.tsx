@@ -1,16 +1,16 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, ButtonHTMLAttributes } from 'react';
 import classNames from 'classnames';
 import styles from './Button.module.scss';
 import { ColorType, IconType } from '../types';
 import Icon from '../Icon';
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   color?: ColorType;
   icon?: IconType;
 }
 
-const Button = ({ children, color = 'blue', icon }: ButtonProps) => {
+const Button = ({ children, color = 'blue', icon, ...props }: ButtonProps) => {
   let iconWrapper;
 
   if (icon !== undefined) {
@@ -28,7 +28,7 @@ const Button = ({ children, color = 'blue', icon }: ButtonProps) => {
   }
 
   return (
-    <button className={classNames(styles.base, styles[color])}>
+    <button className={classNames(styles.base, styles[color])} {...props}>
       <div className={classNames(styles.container)}>
         {iconWrapper}
         {childrenWrapper}
